@@ -9,17 +9,17 @@
   
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <style>
-	#header{height:200px;background-color: }
-	#article{height:100vh;background-color:#F0F0F0;}
-	#article1{height:100vh;background-color:#FF7575}
-	#article2{height:100vh;background-color:#BEBEBE}
-	#article3{height:100vh;background-color:#66B3FF}
-	#footer{height:100vh;background-color: }
-	#title{position: fixed;top: 0px;right: 0px;}
-	.column{float: left;width: 50%;height: 100vh;text-align: center;flex-direction: column;}
+	.header{float: left;width: 25%;text-align: center;font-size:40px;}
+
+	#footer{clear: both;height:60px;background-color:black; }
+
+	.column{float: left;width: 50%;height: 100vh;text-align: center;}
 	*{box-sizing: border-box;}
-	@media screen and (max-width:900px){.column{width:50%;font-size:125%;flex-direction: column;}}
-	@media screen and (max-width:600px){.column{width:100%;font-size:150%;flex-direction: column;}}
+	@media screen and (max-width:700px){.column{flex-direction:column;float:center;width:95%;
+	padding: 16px;height: 550px;text-align: middle;}}
+	@media screen and (max-width:700px){.header{flex-direction:column;float:center;width:95%;
+	padding: 16px;height: 550px;text-align: middle;}}
+
 	img{width:100px;height:auto;border-radius: 50px;margin:auto;}
 	table,td,th{width: 900px;margin:auto;border:2px solid #FFFFFF;font-size: 1.5em;text-align: center;}
 
@@ -28,7 +28,10 @@
 	h1,h2,h3,h4,h5,h6{font-size: 40px;text-align: center;}
 	.nav {background-color: black; height: 50px;}
 	.nav a {float: left; color: white;text-align: center; padding: 14px 16px;text-decoration: none;}
-	.nav a:hover { background-color: #575757; text-decoration: underline; }
+	.nav a:hover { background-color: #575757; text-decoration: underline; }	
+
+	.nav1 {background-color: black; height: 50px;}
+	.nav1 a {float: right; color: white;text-align: center; padding: 14px 16px;text-decoration: none;}
 	a{color:#000000 ;text-decoration: none;}
 	a:hover{background-color: #575757;}
 
@@ -56,13 +59,13 @@
 		  </div>
 		  <div class="carousel-inner">
 		    <div class="carousel-item active">
-		      <img src="jet sr 125.jpg" class="d-block w-100" alt="...">
+		      <img src="jet sr 125.jpg" class="d-block w-100">
 		    </div>
 		    <div class="carousel-item">
-		      <img src="jet sl 125.jpg" class="d-block w-100" alt="...">
+		      <img src="jet sl 125.jpg" class="d-block w-100">
 		    </div>
 		    <div class="carousel-item">
-		      <img src="jet sl 158.jpg" class="d-block w-100" alt="...">
+		      <img src="jet sl 158.jpg" class="d-block w-100">
 		    </div>
 		  </div>
 		  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -75,25 +78,28 @@
 		  </button>
 		</div>
 	</main>
-	<div id="header">
-		<table>
-			<tr>
-				<th><td><a href="#a">三陽</a></td></th>
-				<th><td><a href="#b">山葉</a></td></th>
-				<th><td><a href="#c">光陽</a></td></th>
-				<th><td><a href="#d">偉士牌</a></td></th>
-			</tr>
-			<tr>
-				<th><td><a href="https://tw.sym-global.com/"target="_blank"><img src="三陽.jpg"></a></td></th>
-				<th><td><a href="https://www.yamaha-motor.com.tw/"target="_blank"><img src="山葉.jpg"></a></td></th>
-				<th><td><a href="https://www.kymco.com.tw/"target="_blank"><img src="光陽.jpg"></a></td></th>
-				<th><td><a href="https://www.vespastore.com.tw/"target="_blank"><img src="偉士牌.jpg"></td></a></th>
-			</tr>
-		</table>
+	<div class ="header">
+		<ul><a href="#a">三陽</a></ul>
+		<ul><a href="https://tw.sym-global.com/"target="_blank"><img src="三陽.jpg"></a></ul>
+	</div>
+	<div class ="header">
+		<ul><a href="#b">山葉</a></ul>
+		<ul><a href="https://www.yamaha-motor.com.tw/"target="_blank"><img src="山葉.jpg"></a></ul>
+	</div>
+	<div class ="header">
+		<ul><a href="#c">光陽</a></ul>
+		<ul><a href="https://www.kymco.com.tw/"target="_blank"><img src="光陽.jpg"></a></ul>
+	</div>
+	<div class ="header">
+		<ul><a href="#d">偉士牌</a></ul>
+		<ul><a href="https://www.vespastore.com.tw/"target="_blank"><img src="偉士牌.jpg"></a></ul>
+	</div>
+
+
 		
 		
 	</div>
-	<h1 ><a id="a">三陽</a></h1>
+	<h1 ><a id="a"><a href="https://tw.sym-global.com/"target="_self">三陽</a></a></h1>
 	<div class="column" ;background-color:#F0F0F0;>
 		
 		<ul >
@@ -102,13 +108,13 @@
 
 				  <div class="carousel-inner">
 				    <div class="carousel-item active">
-				      <img src="MB.jpg" class="d-block w-100" alt="...">
+				      <img src="MB.jpg" class="d-block w-100">
 				    </div>
 				    <div class="carousel-item">
-				      <img src="S.jpg" class="d-block w-100" alt="...">
+				      <img src="S.jpg" class="d-block w-100">
 				    </div>
 				    <div class="carousel-item">
-				      <img src="S1.jpg" class="d-block w-100" alt="...">
+				      <img src="S1.jpg" class="d-block w-100">
 				    </div>
 				  </div>
 
@@ -124,7 +130,7 @@
 
 		</ul>
 	</div>
-	<h2><a id="b">山葉</a></h2>
+	<h2><a id="b"><a href="https://www.yamaha-motor.com.tw/"target="_self">山葉</a></a></h2>
 	<div class="column">
 
 		<ul>
@@ -142,13 +148,13 @@
 
 				  <div class="carousel-inner">
 				    <div class="carousel-item active">
-				      <img src="S2.jpg" class="d-block w-100" alt="...">
+				      <img src="S2.jpg" class="d-block w-100">
 				    </div>
 				    <div class="carousel-item">
-				      <img src="S3.jpg" class="d-block w-100" alt="...">
+				      <img src="S3.jpg" class="d-block w-100">
 				    </div>
 				    <div class="carousel-item">
-				      <img src="S4.jpg" class="d-block w-100" alt="...">
+				      <img src="S4.jpg" class="d-block w-100">
 				    </div>
 				  </div>
 
@@ -156,7 +162,7 @@
 			</main>
 		</ul>
 	</div>
-	<h3><a id="c">光陽</a></h3>
+	<h3><a id="c"><a href="https://www.kymco.com.tw/"target="_self">光陽</a></a></h3>
 	<div class="column">
 
 		<ul>
@@ -165,13 +171,13 @@
 
 				  <div class="carousel-inner">
 				    <div class="carousel-item active">
-				      <img src="S5.jpg" class="d-block w-100" alt="...">
+				      <img src="S5.jpg" class="d-block w-100">
 				    </div>
 				    <div class="carousel-item">
-				      <img src="S6.jpg" class="d-block w-100" alt="...">
+				      <img src="S6.jpg" class="d-block w-100">
 				    </div>
 				    <div class="carousel-item">
-				      <img src="S7.jpg" class="d-block w-100" alt="...">
+				      <img src="S7.jpg" class="d-block w-100">
 				    </div>
 				  </div>
 
@@ -186,7 +192,7 @@
 			<li>台灣一家機車製造公司，1963年成立、1964年開業，主要產品為機車，初期技術主要來自於日本本田技研，當時與本田簽署有技術合作合約。在光陽與本田技術合作18年後，本田投資光陽22.5%股權，光陽成為本田在海外的技術合作合資廠。2003年，光陽與本田雙方終止技術合作關係，並由光陽原始股東與光陽員工認股將本田持有之光陽股份全數購回。自此，光陽成為一家獨立自主的品牌企業。</li>
 		</ul>
 	</div>
-	<h4><a id="d">偉士牌</a></h4>
+	<h4><a id="d"><a href="https://www.vespastore.com.tw/"target="_self">偉士牌</a></a></h4>
 	<div class="column">
 
 		<ul>
@@ -202,19 +208,30 @@
 
 				  <div class="carousel-inner">
 				    <div class="carousel-item active">
-				      <img src="S8.jpg" class="d-block w-100" alt="...">
+				      <img src="S8.jpg" class="d-block w-100">
 				    </div>
 				    <div class="carousel-item">
-				      <img src="S9.jpg" class="d-block w-100" alt="...">
+				      <img src="S9.jpg" class="d-block w-100">
 				    </div>
 				    <div class="carousel-item">
-				      <img src="S10.jpg" class="d-block w-100" alt="...">
+				      <img src="S10.jpg" class="d-block w-100">
 				    </div>
 				  </div>
 
 				</div>
 			</main>
 		</ul>
+
+
+	</div>
+	<div id="footer">
+		<div class="nav1" >
+			<a href="https://jeff-lj.github.io/hung/hw4.html" target="_self">期中報告</a>
+			<a href="https://jeff-lj.github.io/hung/三陽.html" target="_self">洪靖傑</a>
+			<a href="https://13cheng.github.io/test/%E5%B1%B1%E8%91%89.html" target="_self">趙奕誠</a>
+			<a href="https://cr98r87fy438r.github.io/TEST/%E5%85%89%E9%99%BD.html" target="_self">林宸平</a>
+			<a href="https://h0725.github.io/abc/%E5%81%89%E5%A3%AB%E7%89%8C.html" target="_self">陳泓霖</a>
+		</div>
 	</div>
 </body>
 </html>
