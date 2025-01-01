@@ -2,13 +2,13 @@
 function A1() {
 	document.getElementById("col").style.display='block';
 	document.getElementById("title").style.display='none';
-	document.getElementById("col1").innerHTML="歡迎來到?遊戲世界";
+	document.getElementById("col1").innerHTML="歡迎來到盲人迷宮";
 	document.getElementById("butt1").style.display='block'
 }
 function A2() {
 	document.getElementById("col").style.display='block';
 	document.getElementById("title").style.display='none';
-	document.getElementById("col1").innerHTML="你好";
+	document.getElementById("col1").innerHTML="找尋出去道路";
 	document.getElementById("butt1").style.display='block';
 }
 function A3() {
