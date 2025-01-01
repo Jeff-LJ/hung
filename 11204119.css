@@ -1,0 +1,47 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+body {font-family: 'Cursive'}
+#title{width: 100vw ;height:100vh;
+	text-align: center;font-size:40px;
+	background-color: #FF4040;}
+#butt{position:fixed; top:80vh; 
+	width: 100vw;text-align: center;
+	font-size:40px;background-color: #FFD39B;}
+#butt1{position:fixed; top:80vh; 
+	width: 100vw;text-align: center;
+	font-size:40px;background-color: #FFD39B;}
+
+#col{width: 100vw ;height:100vh;
+	text-align: center;font-size:40px;
+	background-color: 	#FFFFFF;}
+#col1{width: 100vw ;height:100vh;
+	text-align: center;font-size:40px;
+	background-color: 	#FFFFFF;}
+#col2{width: 100vw ;height:100vh;
+	text-align: center;font-size:40px;
+	background-color: 	#70c5ce;}
+
+#Canvas{width:50px;height:50px;position:absolute;
+	top:550px; left: 50px;
+
+}
+#wingame {
+    font-weight: bold;
+    text-align: center;
+
+}
+
+.B1{border-radius: 16px;
+	width:200px;
+	height: 80px;
+	text-align: center;
+	padding: 15px;
+	font-size:30px;
+
+	}
+
+
