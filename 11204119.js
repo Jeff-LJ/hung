@@ -8,7 +8,7 @@ function A1() {
 function A2() {
 	document.getElementById("col").style.display='block';
 	document.getElementById("title").style.display='none';
-	document.getElementById("col1").innerHTML="找尋出去道路";
+	document.getElementById("col1").innerHTML="找尋出去道路 <br> 1.沒有任何提示，你只能依自己的想法，使用上下左右鍵 <br> 2.通過了，遊戲就結束了 <br> 3.隔一天才有新的出口";
 	document.getElementById("butt1").style.display='block';
 }
 function A3() {
