@@ -154,7 +154,7 @@ let maxLeft=1170;
 let targetX = 0;
 let targetY = 0;
 
-// 更新角色位置
+
 function updatePlayerPosition(x, y) {
     const elem = document.getElementById("Canvas");
     elem.style.left = `${x}px`;
@@ -163,11 +163,11 @@ function updatePlayerPosition(x, y) {
 
 function win(x,y) {
     if (
-        Math.abs(x - targetX) < 10 && // 判斷 X 軸接近
-        Math.abs(y - targetY) < 10 // 判斷 Y 軸接近
+        Math.abs(x - targetX) < 10 && 
+        Math.abs(y - targetY) < 10 
     ) {
     	document.getElementById("col1").style.display="block";
-        document.getElementById("wingame").style.display = "block"; // 顯示勝利訊息
+        document.getElementById("wingame").style.display = "block";
 
     	document.getElementById("col2").style.display="none";
     }
@@ -210,7 +210,7 @@ area.addEventListener("keydown",function(event){
 			break;
 
 	}
-	win(x,y); // 每次移動後檢查是否勝利
+	win(x,y);
 });
 
 
